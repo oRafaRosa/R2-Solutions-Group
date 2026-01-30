@@ -18,6 +18,26 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              'react-vendor': ['react', 'react-dom'],
+              'icons': ['lucide-react'],
+            }
+          }
+        },
+        minify: 'terser',
+        terserOptions: {
+          compress: {
+            drop_console: true,
+            drop_debugger: true
+          }
+        }
+      },
+      optimizeDeps: {
+        include: ['react', 'react-dom', 'lucide-react']
       }
     };
 });

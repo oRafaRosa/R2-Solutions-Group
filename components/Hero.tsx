@@ -5,13 +5,27 @@ import { SLOGAN } from '../constants';
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-slate-950 overflow-hidden pt-20">
-      {/* Background Elements */}
+      {/* Tech Grid Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px'
+        }}></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
+      </div>
+      
+      {/* Animated Orbs */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div 
-          className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-brand-600/10 rounded-full blur-[120px]"
+          className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-brand-500/20 rounded-full blur-[120px]"
+          style={{ animation: 'float 8s ease-in-out infinite' }}
         />
         <div 
-          className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] bg-accent-600/10 rounded-full blur-[120px]"
+          className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] bg-accent-500/20 rounded-full blur-[120px]"
+          style={{ animation: 'float 10s ease-in-out infinite reverse' }}
         />
       </div>
 
@@ -32,7 +46,7 @@ const Hero: React.FC = () => {
           data-aos-delay="200"
         >
           Mais do que tecnologia.<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-accent-400 to-brand-400 animate-gradient-x bg-[length:200%_auto]">
             Soluções com propósito.
           </span>
         </h1>
@@ -52,16 +66,18 @@ const Hero: React.FC = () => {
         >
           <a 
             href="#servicos"
-            className="group flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-brand-900/40 hover-lift"
+            className="group relative flex items-center gap-2.5 bg-white text-slate-950 px-9 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-[1.02]"
+            style={{ fontSize: '17px', boxShadow: '0 4px 24px rgba(255, 255, 255, 0.12)' }}
           >
-            Nossas Soluções
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            <span>Nossas Soluções</span>
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
           </a>
           <a 
             href="#manifesto"
-            className="flex items-center gap-2 px-8 py-4 rounded-lg font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 transition-all bg-slate-900/30 backdrop-blur-sm hover-lift"
+            className="group flex items-center gap-2.5 px-9 py-4 rounded-full font-semibold text-white backdrop-blur-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-300"
+            style={{ fontSize: '17px' }}
           >
-            Conheça o Manifesto
+            <span>Conheça o Manifesto</span>
           </a>
         </div>
       </div>

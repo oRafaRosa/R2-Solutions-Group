@@ -18,30 +18,34 @@ const Services: React.FC = () => {
           {SERVICES.map((service, index) => (
             <div 
               key={service.id}
-              className="group bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-brand-500/50 hover:bg-slate-800/50 transition-all duration-300 hover-lift glow-on-hover"
+              className="group relative backdrop-blur-xl bg-white/[0.02] border border-white/[0.05] p-12 rounded-3xl hover:bg-white/[0.04] hover:border-white/[0.08] transition-all duration-500 overflow-hidden"
               data-aos="fade-up"
               data-aos-delay={index * 100}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)' }}
             >
-              <div className="w-14 h-14 bg-brand-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="text-brand-400" size={32} />
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/10 group-hover:to-transparent transition-all duration-500"></div>
+              <div className="relative z-10">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-brand-500/10 to-accent-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-105 transition-all duration-500 backdrop-blur-xl border border-white/5">
+                <service.icon className="text-brand-400 group-hover:text-brand-300 transition-colors relative z-10" size={32} strokeWidth={1.5} />
               </div>
               
-              <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-300 transition-colors">
+              <h4 className="text-3xl font-semibold text-white mb-5 group-hover:text-brand-300 transition-colors" style={{ letterSpacing: '-0.02em' }}>
                 {service.title}
               </h4>
               
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <p className="text-slate-400 mb-10 leading-relaxed" style={{ fontSize: '17px' }}>
                 {service.description}
               </p>
 
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {service.items.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-slate-300 text-sm">
-                    <Check className="text-brand-500 flex-shrink-0 mt-0.5" size={16} />
-                    <span>{item}</span>
+                  <li key={idx} className="flex items-start gap-3 text-slate-300">
+                    <Check className="text-brand-400 flex-shrink-0 mt-1" size={18} strokeWidth={2} />
+                    <span style={{ fontSize: '15px' }}>{item}</span>
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           ))}
         </div>

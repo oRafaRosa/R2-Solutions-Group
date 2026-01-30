@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-slate-950/95 backdrop-blur-md border-b border-slate-800 py-3 shadow-lg shadow-slate-950/50' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-slate-950/80 backdrop-blur-2xl border-b border-white/[0.05] py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
@@ -24,19 +24,20 @@ const Navbar: React.FC = () => {
             </a>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-slate-300 hover:text-brand-400 transition-colors text-sm font-medium uppercase tracking-wide relative group"
+                className="text-slate-400 hover:text-white transition-colors text-[15px] font-medium relative group"
+                style={{ letterSpacing: '-0.01em' }}
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <a href="#contato" className="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-brand-900/50 hover-lift">
-              Fale Conosco
+            <a href="#contato" className="group relative bg-white text-slate-950 px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-[1.02]" style={{ fontSize: '15px', boxShadow: '0 2px 12px rgba(255, 255, 255, 0.1)' }}>
+              <span className="relative z-10">Fale Conosco</span>
             </a>
           </div>
 

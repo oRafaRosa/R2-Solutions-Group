@@ -88,9 +88,9 @@ export const FOUNDERS: Founder[] = [
     role: 'Tecnologia, Dados & Estratégia',
     imageUrl: '/assets/rafael.png',
     description: [
-      'Formado em Ciências Contábeis e com MBA pela FIAP, construiu carreira nas maiores auditorias do mundo (PwC, KPMG, EY) e no Grupo Casas Bahia.',
-      'Desenvolvedor e solucionador nato. Enxerga problemas como desafios técnicos.',
-      'Foco em criar ferramentas, automações e sistemas que trazem eficiência real.'
+      'Formado em Ciências Contábeis e com MBA pela FIAP, construiu sua carreira atuando nas maiores empresas de auditoria do mundo (PwC, KPMG e EY), onde teve contato direto com operações complexas e desafios reais do ambiente corporativo.',
+      'Possui forte visão estratégica e ampla experiência em dados, processos e tecnologia, entendendo profundamente como as empresas funcionam na prática — do operacional à tomada de decisão.',
+      'Desenvolvedor e solucionador nato, enxerga problemas como desafios técnicos. É focado em criar ferramentas, automações, sistemas e aplicações que simplificam rotinas, aumentam eficiência e geram resultado real. Na R², transforma complexidade em soluções claras, funcionais e escaláveis.'
     ],
     skills: ['Auditoria', 'Dados', 'Desenvolvimento', 'Estratégia Corporativa']
   },
@@ -136,6 +136,7 @@ export const VALUES: Value[] = [
   { title: 'Criatividade', description: 'Soluções fora da caixa.', icon: Lightbulb },
   { title: 'Resultado', description: 'Compromisso com o fim.', icon: CheckCircle2 },
   { title: 'Evolução', description: 'Melhoria contínua.', icon: BarChart3 },
+  { title: 'Personalização', description: 'Cada solução no tamanho do seu negócio.', icon: Layers },
 ];
 
 export const PROBLEMS_SOLVED = [
