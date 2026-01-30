@@ -6,7 +6,7 @@ const Manifesto: React.FC = () => {
   return (
     <section id="manifesto" className="py-24 bg-slate-900 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-down">
           <Quote className="mx-auto text-brand-500 mb-6 opacity-50" size={48} />
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider mb-2">Manifesto R²</h2>
           <div className="h-1 w-20 bg-brand-500 mx-auto rounded-full" />
@@ -21,6 +21,8 @@ const Manifesto: React.FC = () => {
                   ? "font-bold text-brand-400" 
                   : "text-slate-300 font-light"
               }`}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               {text}
             </p>

@@ -6,7 +6,7 @@ const Founders: React.FC = () => {
   return (
     <section id="quem-somos" className="py-24 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-brand-500 font-semibold tracking-wide uppercase mb-3">Quem Somos</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">A união de dois mundos</h3>
           <p className="max-w-3xl mx-auto text-slate-400 text-lg">
@@ -16,12 +16,18 @@ const Founders: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {FOUNDERS.map((founder, idx) => (
-            <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-slate-600 transition-all flex flex-col md:flex-row">
-              <div className="md:w-2/5 h-64 md:h-auto relative">
+            <div 
+              key={idx} 
+              className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-slate-600 transition-all flex flex-col md:flex-row hover-lift glow-on-hover"
+              data-aos="fade-up"
+              data-aos-delay={idx * 200}
+            >
+              <div className="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
                 <img 
                   src={founder.imageUrl} 
                   alt={founder.name} 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover object-center transition-all duration-500 hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent md:bg-gradient-to-r md:from-transparent md:to-slate-900"></div>
               </div>

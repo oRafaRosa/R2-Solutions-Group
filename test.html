@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <div id="root">Loading...</div>
+    <script type="module">
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+        
+        function Test() {
+            return React.createElement('h1', {}, 'React is working!');
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(React.createElement(Test));
+    </script>
+</body>
+</html>

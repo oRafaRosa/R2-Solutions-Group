@@ -86,7 +86,7 @@ export const FOUNDERS: Founder[] = [
   {
     name: 'Rafael Rosa',
     role: 'Tecnologia, Dados & Estratégia',
-    imageUrl: 'https://picsum.photos/id/107/400/400', // Placeholder as per instructions
+    imageUrl: '/assets/rafael.png',
     description: [
       'Formado em Ciências Contábeis e com MBA pela FIAP, construiu carreira nas maiores auditorias do mundo (PwC, KPMG, EY) e no Grupo Casas Bahia.',
       'Desenvolvedor e solucionador nato. Enxerga problemas como desafios técnicos.',
@@ -97,13 +97,13 @@ export const FOUNDERS: Founder[] = [
   {
     name: 'Rebeca Muniz',
     role: 'Criatividade, Comunicação & Marketing',
-    imageUrl: 'https://picsum.photos/id/338/400/400', // Placeholder as per instructions
+    imageUrl: '/assets/rebeca.png',
     description: [
-      'Formada em Publicidade e Propaganda, fundadora da Muniz Social Media.',
-      'Especialista em criar narrativas, identidade e crescimento de marca.',
-      'Na R², garante que toda solução tecnológica tenha forma, linguagem e impacto humano.'
+      'Formada em Publicidade e Propaganda, atua há anos com marketing digital e posicionamento de marcas. Fundadora da Muniz Social Media, possui carteira sólida de clientes e se destaca pela criatividade, agilidade e visão estratégica.',
+      'Especialista em Instagram, com forte domínio de estratégias de crescimento e posicionamento. Focada em alavancar tráfego orgânico por meio de conteúdos virais, consistentes e alinhados ao público certo.',
+      'Sua atuação vai além de posts bonitos: envolve planejamento, identidade, narrativa e crescimento real. Na R², garante que toda solução tenha forma, linguagem e impacto.'
     ],
-    skills: ['Marketing Digital', 'Branding', 'Social Media', 'Planejamento']
+    skills: ['Marketing Digital', 'Instagram Growth', 'Conteúdo Viral', 'Branding', 'Estratégia']
   }
 ];
 

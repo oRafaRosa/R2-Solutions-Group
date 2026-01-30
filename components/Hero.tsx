@@ -7,39 +7,59 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-slate-950 overflow-hidden pt-20">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-brand-600/10 rounded-full blur-[120px]" />
-        <div className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] bg-accent-600/10 rounded-full blur-[120px]" />
+        <div 
+          className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-brand-600/10 rounded-full blur-[120px]"
+        />
+        <div 
+          className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] bg-accent-600/10 rounded-full blur-[120px]"
+        />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-slate-700 bg-slate-900/50 backdrop-blur-sm">
+        <div 
+          className="inline-block mb-6 px-4 py-1.5 rounded-full border border-slate-700 bg-slate-900/50 backdrop-blur-sm"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <span className="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">
             R² Solutions Group
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight">
+        <h1 
+          className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Mais do que tecnologia.<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">
             Soluções com propósito.
           </span>
         </h1>
         
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
+        <p 
+          className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           Unimos estratégia, tecnologia e criatividade para transformar desafios complexos em resultados claros.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div 
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <a 
             href="#servicos"
-            className="group flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-brand-900/40"
+            className="group flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-brand-900/40 hover-lift"
           >
             Nossas Soluções
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a 
             href="#manifesto"
-            className="flex items-center gap-2 px-8 py-4 rounded-lg font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 transition-all bg-slate-900/30 backdrop-blur-sm"
+            className="flex items-center gap-2 px-8 py-4 rounded-lg font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 transition-all bg-slate-900/30 backdrop-blur-sm hover-lift"
           >
             Conheça o Manifesto
           </a>
