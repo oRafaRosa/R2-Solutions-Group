@@ -11,6 +11,8 @@ import {
   Zap
 } from 'lucide-react';
 import { NavItem, Service, Founder, ProcessStep, Value } from './types';
+import rafaelImg from './public/assets/rafael.png';
+import rebecaImg from './public/assets/rebeca.png';
 
 export const COMPANY_NAME = "R² Solutions Group";
 export const SLOGAN = "Mais do que tecnologia. Soluções com propósito.";
@@ -86,7 +88,7 @@ export const FOUNDERS: Founder[] = [
   {
     name: 'Rafael Rosa',
     role: 'Tecnologia, Dados & Estratégia',
-    imageUrl: '/assets/rafael.png',
+    imageUrl: rafaelImg,
     description: [
       'Formado em Ciências Contábeis e com MBA pela FIAP, construiu sua carreira atuando nas maiores empresas de auditoria do mundo (PwC, KPMG e EY), onde teve contato direto com operações complexas e desafios reais do ambiente corporativo.',
       'Possui forte visão estratégica e ampla experiência em dados, processos e tecnologia, entendendo profundamente como as empresas funcionam na prática — do operacional à tomada de decisão.',
@@ -97,7 +99,7 @@ export const FOUNDERS: Founder[] = [
   {
     name: 'Rebeca Muniz',
     role: 'Criatividade, Comunicação & Marketing',
-    imageUrl: '/assets/rebeca.png',
+    imageUrl: rebecaImg,
     description: [
       'Formada em Publicidade e Propaganda, atua há anos com marketing digital e posicionamento de marcas. Fundadora da Muniz Social Media, possui carteira sólida de clientes e se destaca pela criatividade, agilidade e visão estratégica.',
       'Especialista em Instagram, com forte domínio de estratégias de crescimento e posicionamento. Focada em alavancar tráfego orgânico por meio de conteúdos virais, consistentes e alinhados ao público certo.',
